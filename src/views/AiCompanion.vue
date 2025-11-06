@@ -4,6 +4,7 @@
       <template #header>
         <div class="card-header">
           <span>AI 学伴问答</span>
+          <el-tag type="info" effect="plain">模型：通义千问 Qwen-Turbo</el-tag>
         </div>
       </template>
       

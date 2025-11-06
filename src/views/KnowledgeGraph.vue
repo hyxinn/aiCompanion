@@ -22,9 +22,11 @@
         </div>
         
         <div class="graph-area">
-          <div class="graph-placeholder">
-            [Mock Placeholder] ECharts/D3.js 将在此处渲染知识图谱数据。
-          </div>
+          <img
+            class="graph-image"
+            src="E:/test_java/aiCompanion/src/assets/visualisation.png"
+            alt="知识图谱预览"
+          />
         </div>
       </div>
     </el-card>
@@ -79,18 +81,18 @@ const drawerVisible = ref(false)
 
 .graph-area {
   height: 650px;
-  border: 2px dashed #dcdfe6;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  transition: all 0.3s ease;
+  background: #fff;
 }
 
-.graph-area:hover {
-  border-color: #409eff;
-  background: linear-gradient(135deg, #e8f4ff 0%, #c3cfe2 100%);
+.graph-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .graph-placeholder {
